@@ -1,0 +1,491 @@
+/* Fonts */
+@font-face {
+    font-family: 'caviar_dreamsregular';
+    src: url('CaviarDreams-webfont.eot');
+    src: url('CaviarDreams-webfont.eot?#iefix') format('embedded-opentype'),
+         url('CaviarDreams-webfont.woff2') format('woff2'),
+         url('CaviarDreams-webfont.woff') format('woff'),
+         url('CaviarDreams-webfont.ttf') format('truetype'),
+         url('CaviarDreams-webfont.svg#caviar_dreamsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Main Elements */
+body {
+	background-color: #DCF1A1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+h1 {
+	text-align: center;
+	font-family: 'caviar_dreamsregular', sans-serif;
+	color: #791422;
+	font-size: 2.8em;
+}
+
+#robots {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+
+/* Mr Robot */
+.mr_head {
+	background-color: #246D5F;
+}
+
+.mr_left_arm,
+.mr_right_arm {
+	background-color: #0E5144;
+}
+
+.mr_torso,
+.mr_left_leg,
+.mr_right_leg {
+	 background-color: #00362B;
+}
+
+.mr_android {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+	margin-right: 15px;
+}
+
+.mr_head {
+	width: 200px;
+	margin: 0 auto;
+	height: 150px;
+	border-radius: 200px 200px 0 0;
+	margin-bottom: 10px;
+   display: flex;
+   align-items: flex-end;
+}
+
+.mr_eyes {
+   width: 200px;
+   height: 50px;
+   display: flex;
+   justify-content: space-around;
+}
+
+.mr_eyes:hover {
+	transform: translate(20px, 20px);
+	transition: 1s ease-in-out;
+}
+
+.mr_left_eye, .mr_right_eye {
+	width: 20px;
+	height: 20px;
+	border-radius: 15px;
+	background-color: white;
+}
+
+.mr_upper_body {
+	width: 300px;
+	height: 150px;
+	display: flex;
+}
+
+.mr_torso {
+	width: 200px;
+	height: 200px;
+	border-radius: 0 0 50px 50px;
+}
+
+.mr_left_arm, .mr_right_arm {
+	width: 40px;
+	height: 125px;
+	border-radius: 100px;
+}
+
+.mr_left_arm {
+	margin-right: 10px;
+}
+
+.mr_right_arm {
+	margin-left: 10px;
+}
+
+.mr_right_arm:hover {
+	-webkit-transform: rotate(-30deg);
+	 -moz-transform: rotate(-30deg);
+	 -o-transform: rotate(-30deg);
+	 -ms-transform: rotate(-30deg);
+	 transform: rotate(-30deg);
+	 transition: 1s;
+}
+
+.mr_lower_body {
+	width: 300px;
+	height: 120px;
+   display: flex;
+   justify-content: center;
+}
+
+.mr_left_leg, .mr_right_leg {
+	width: 40px;
+	height: 120px;
+	border-radius: 0 0 100px 100px;
+}
+
+.mr_left_leg {
+   margin-right: 12px;
+}
+
+.mr_right_leg {
+   margin-left: 12px;
+}
+
+
+/* Mrs Robot */
+.mrs_head {
+	background-color: #479030;
+}
+
+.mrs_left_arm,
+.mrs_right_arm {
+	background-color: #286C12;
+}
+
+.mrs_heart,
+.mrs_left,
+.mrs_right,
+.mrs_hips,
+.mrs_left_leg,
+.mrs_right_leg {
+	 background-color: #114800;
+}
+
+.mrs_android {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+	margin-left: 15px;
+}
+
+.mrs_head {
+	width: 180px;
+	margin: 0 auto;
+	height: 135px;
+	border-radius: 200px 200px 0 0;
+	margin-bottom: 10px;
+   display: flex;
+   align-items: flex-end;
+}
+
+.mrs_head:hover {
+	width: 250px;
+   transition: 1s ease-in-out;
+}
+
+.mrs_eyes {
+   width: 180px;
+   height: 35px;
+   display: flex;
+   justify-content: space-around;
+}
+
+.mrs_left_eye, .mrs_right_eye {
+	width: 18px;
+	height: 18px;
+	border-radius: 15px;
+	background-color: white;
+}
+
+.mrs_upper_body {
+	width: 250px;
+	height: 235px;
+	display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin-top: 5px;
+}
+
+.mrs_chest {
+   width: 180px;
+	height: 235px;
+   display: flex;
+   flex-direction: column;
+   align-items: stretch;
+}
+
+.mrs_heart {
+  background-color: #114800;
+  width: 100px;
+  height: 100px;
+  transform: rotate(-45deg);
+  position: relative;
+  margin: auto;
+  margin-bottom: -25px;
+}
+
+.mrs_left_heart {
+  background-color: #114800;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  position:absolute;
+  top: -55px;
+}
+
+.mrs_right_heart {
+  background-color: #114800;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  right: -55px;
+}
+
+.mrs_hips {
+	width: 180px;
+	height: 130px;
+	border-radius: 70px 70px 50px 50px;
+   margin-top: -10px;
+}
+
+.mrs_left_arm, .mrs_right_arm {
+	width: 30px;
+	height: 130px;
+	border-radius: 100px;
+}
+
+.mrs_left_arm {
+	margin-right: 10px;
+}
+
+.mrs_left_arm:hover {
+	-webkit-transform: rotate(30deg);
+	 -moz-transform: rotate(30deg);
+	 -o-transform: rotate(30deg);
+	 -ms-transform: rotate(30deg);
+	 transform: rotate(30deg);
+	 transition: 1s;
+}
+
+.mrs_right_arm {
+	margin-left: 10px;
+}
+
+.mrs_lower_body {
+	width: 180px;
+	height: 100px;
+   display: flex;
+   justify-content: center;
+   display: flex;
+   justify-content: center;
+   margin-top: -15px;
+}
+
+.mrs_left_leg, .mrs_right_leg {
+	width: 30px;
+	height: 100px;
+	border-radius: 0 0 100px 100px;
+}
+
+.mrs_left_leg {
+   margin-right: 12px;
+}
+
+.mrs_right_leg {
+   margin-left: 12px;
+}
+
+
+/* Child Robot */
+.child_head {
+   background-color: #84A136;
+}
+
+.child_left_arm,
+.child_right_arm {
+   background-color: #5E7914;
+}
+
+.child_torso,
+.child_left_leg,
+.child_right_leg {
+	 background-color: #3B5000;
+}
+
+.child_android {
+   display: flex;
+   flex-direction: column;
+	align-items: center;
+	margin-left: 15px;
+}
+
+.child_head {
+	width: 100px;
+	margin: 0 auto;
+	height: 75px;
+	border-radius: 200px 200px 0 0;
+	margin-bottom: 10px;
+   display: flex;
+   align-items: flex-end;
+}
+
+.child_eyes {
+   width: 100px;
+   height: 30px;
+   display: flex;
+   justify-content: space-around;
+}
+
+.child_left_eye, .child_right_eye {
+	width: 20px;
+	height: 20px;
+	border-radius: 15px;
+	background-color: white;
+}
+
+.child_upper_body {
+	width: 150px;
+	height: 75px;
+	display: flex;
+}
+
+.child_torso {
+	width: 110px;
+	height: 100px;
+	border-radius: 0 0 50px 50px;
+}
+
+.child_left_arm, .child_right_arm {
+	width: 25px;
+	height: 65px;
+	border-radius: 100px;
+}
+
+.child_left_arm {
+	margin-right: 4px;
+}
+
+.child_right_arm {
+	margin-left: 4px;
+}
+
+.child_lower_body {
+	width: 100px;
+	height: 60px;
+   display: flex;
+   justify-content: center;
+}
+
+.child_left_leg, .child_right_leg {
+	width: 30px;
+	height: 60px;
+	border-radius: 0 0 100px 100px;
+}
+
+.child_left_leg {
+   margin-right: 5px;
+}
+
+.child_right_leg {
+   margin-left: 5px;
+}
+
+
+/* Animation */
+@keyframes mr_eyes {
+  0% {
+   transform: translate(0, 0);
+  }
+
+  100% {
+   transform: translate(20px, 20px);
+ }
+}
+
+.mr_eyes {
+   animation: mr_eyes 1s ease-in-out 1s forwards;
+}
+
+@keyframes mrs_head {
+  0% {
+   width: 180px;
+  }
+
+  100% {
+   width: 250px;
+ }
+}
+
+.mrs_head {
+   animation: mrs_head 1s ease-in-out forwards;
+}
+
+
+@keyframes mrs_left_arm {
+  0% {
+   transform: rotate(0deg);
+  }
+
+  100% {
+   transform: rotate(30deg);
+ }
+}
+
+.mrs_left_arm {
+   animation: mrs_left_arm 1s 2s forwards;
+}
+
+@keyframes mr_right_arm {
+  0% {
+   transform: rotate(0deg);
+  }
+
+  100% {
+   transform: rotate(-30deg);
+ }
+}
+
+.mr_right_arm {
+   animation: mr_right_arm 1s 3s forwards;
+}
+
+@keyframes bounceInDown_child_robot {
+  from,
+  85%,
+  90%,
+  95%,
+  100% {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  85% {
+    opacity: 1;
+    transform: translate3d(0, 25px, 0);
+  }
+
+  90% {
+    transform: translate3d(0, -10px, 0);
+  }
+
+  95% {
+    transform: translate3d(0, 5px, 0);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.bounceInDown_child_robot {
+   animation: bounceInDown_child_robot 5s 2s;
+   transform: translate3d(0, -3000px, 0);
+   animation-fill-mode: forwards;
+}
